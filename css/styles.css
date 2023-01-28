@@ -1,0 +1,377 @@
+:root {
+  --primary-color: #002C3E;
+  --secondary-color: #949494;
+  --color-black: #000;
+  --color-white: #fff;
+  --btn-color: #dc143c;
+  --heading: 3rem;
+  --btn-hover: #9c0725;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+/* THE HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.logo {
+  width: 15rem;
+}
+
+#check, .toggle__menu {
+  display: none;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar__menu a{
+  color: var(--color-black);
+  font-weight: 800;
+}
+
+.navbar__menu li:first-child a {
+  color: var(--btn-color);
+}
+
+.navbar__menu a:hover {
+  color: var(--btn-color);
+}
+
+.navbar__menu .fa-solid  {
+  padding: 0 5rem;
+}
+
+.navbar__menu .fa-solid:hover  {
+  color: var(--btn-color);
+  cursor: pointer;
+}
+
+/* SECTION HERO */
+.hero {
+  background-image: linear-gradient(93deg, rgba(0, 0, 0, 0.804) 31%, rgba(0, 0, 0, 0.804) 64%), url(../assets/fashion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: var(--color-white);
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__info h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.hero__info p {
+  padding-bottom: 1.6rem;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.hero__info a {
+  background-color: var(--btn-color);
+  color: var(--color-white);
+  border-radius: .4rem;
+  padding: .6rem 1.4rem;
+}
+
+.hero__info a:hover {
+  background-color: var(--btn-hover);
+}
+
+/* SECTION PRODUCTS */
+.products h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: var(--heading);
+  padding: 5rem 0;
+}
+
+.products__flex {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: .7rem;
+  padding-bottom: 6rem;
+}
+
+.products__info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: .7rem;
+  padding: .5rem;
+}
+
+.products__info img {
+  width: 23rem;
+  height: 23rem;
+  object-fit: cover;
+  border-radius: .7rem;
+}
+
+.products__details p {
+  padding-top: .7rem;
+  color: var(--secondary-color);
+}
+
+.products__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
+.products__price span:first-child {
+  text-decoration: line-through;
+  color: var(--btn-color);
+}
+
+.btn__buy {
+  background-color: var(--btn-color);
+  color: var(--color-white);
+  border-radius: .4rem;
+  padding: .6rem;
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin-bottom: .7rem;
+}
+
+.btn__buy:hover {
+  background-color: var(--btn-hover);
+}
+
+/* SECTION OFFER */
+.offer {
+  background-image: linear-gradient(93deg, rgba(0, 0, 0, 0.804) 31%, rgba(0, 0, 0, 0.804) 64%), url(../assets/girl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: var(--color-white);
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__info h2 {
+  font-size: 4.5rem;
+  padding-bottom: 1rem;
+}
+
+.offer__info p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.offer__info a {
+  background-color: var(--btn-color);
+  color: var(--color-white);
+  border-radius: .4rem;
+  padding: .6rem 1.4rem;
+}
+
+.offer__info a:hover {
+  background-color: var(--btn-hover);
+}
+
+/* SECTION TESTIMONIAL */
+.testimonial h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: var(--heading);
+  padding: 5rem 0;
+}
+
+.testimonial__flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+}
+
+.testimonial__info {
+  width: 35rem;
+  height: 25rem;
+}
+
+.testimonial__info h4 {
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+}
+
+.testimonial__info p {
+  color: var(--color-black);
+  padding-bottom: 5rem;
+  font-size: 1.5rem;
+}
+
+.testimonial img {
+  width: 10rem;
+  border-radius: 50%;
+}
+/* SECTION FOOTER  */
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 2rem;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy a {
+  color: var(--secondary-color);
+  font-weight: 800;
+}
+
+.footer__red {
+  display: flex;
+  gap: 2rem;
+  color: var(--color-white);
+}
+
+.footer__red a{
+  color: var(--color-white);
+  font-size: 2.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 640px) {
+  .hero {
+    height: 35rem;
+  }
+  .hero__info h1 {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .hero__info p {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 1.6rem;
+  }
+  .hero__info a {
+    border-radius: .4rem;
+    padding: .4rem 1rem;
+  }
+  .btn__buy {
+  padding: .4rem;
+  width: 50%;
+} 
+  .offer__info h2 {
+  font-size: 2.5rem;
+}
+
+  .offer__info p {
+  font-size: 1.6rem;
+  padding-bottom: 2rem;
+}
+
+  .footer__flex {
+  flex-direction: column;
+  gap: 2rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .toggle__menu {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .navbar__menu {
+    display: block;
+    position: fixed;
+    background-color: var(--secondary-color);
+    top: 44px;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    padding: 1.5rem;
+    left: -100%;
+    transition: all .7s;
+  }
+  .navbar__menu  li {
+    padding: 1.6rem;
+  }
+  #check:checked ~ .navbar__menu {
+    display: block;
+    left: 0;
+    transition: all .7s;
+  }
+  .header .logo {
+    width: 15rem;
+    margin-left: -3rem;
+  }
+}
