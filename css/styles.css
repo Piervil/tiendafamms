@@ -341,6 +341,37 @@ img {
 }
 }
 
+@media screen and (max-width: 603px) {
+  
+  .products__info {
+    padding: .5rem;
+    width: 45%;
+  }
+  
+  .products__info img {
+    width: 23rem;
+    height: 13rem;
+  }
+  
+  .products__details p {
+    font-size: 1.3rem;
+  }
+  
+  .products__details span {
+    font-size: 1.2rem;
+  }
+
+  .products__price {
+    gap: .8rem;
+    font-size: 1.2rem;
+  }
+  
+  .btn__buy {
+    font-size: 1.1rem;
+    width: 99%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .toggle__menu {
     display: block;
